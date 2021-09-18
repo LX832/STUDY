@@ -12,12 +12,12 @@ public class Test6 {
 
 
 		String[] participant = {"sangeun","sangwon","wonchul","sangeun"};
-    	String[] completion = {"wonchul","sangwon",};
+    	String[] completion = {"wonchul","sangwon"};    	
     	
-    	
-		System.out.println(getArrayMin(participant, completion));
+		System.out.println(getArrayMin(participant, completion));		
+		System.out.println("============================");
 		
-		System.out.println("동명이인" + getArrayMin2(participant, completion) + "중 n명은 완주못했어요");
+		System.out.println("동명이인" + getArrayMin2(participant, completion) + "n명은 완주못했어요");
 		System.out.println(getArrayMin2(participant, completion));
 	}
 		
@@ -54,36 +54,38 @@ public class Test6 {
 		}
 		return answer;
 	}
-		public static String getArrayMin2(String participant[], String completion[]) {
-			
-			String answer = "이름은? : ";
-			int count = 0;
-			try {
-				if(participant.length > 0 && completion.length > 0) { 
-					for(int i=0; i<participant.length; i++) {
-						
-						for(int j=0; j<completion.length; j++) {						
-							if(participant[i].equals(completion[j]) == true) { 
-								count ++; 																
-							}												
-						}
-						
-						if(count <= 0) { 
-							if(answer.contains(participant[i]) == false) { 
-								answer += String.valueOf(participant[i] + " ");							
-							}	
-						}
-						
-						count = 0; 
+	
+	
+	public static String getArrayMin2(String participant[], String completion[]) {
+		
+		String answer = "";
+		int count = 0;
+		try {
+			if(participant.length > 0 && completion.length > 0) { 
+				for(int i=0; i<participant.length; i++) {
+					
+					for(int j=0; j<completion.length; j++) {						
+						if(participant[i].equals(completion[j]) == true) { 
+							count ++; 																
+						}												
 					}
-				}else {
-					System.out.println("비었는데요?");
+					
+					if(count <= 0) { 
+						if(answer.contains(participant[i]) == false) { 
+							answer += String.valueOf(participant[i] + " ");							
+						}	
+					}
+					
+					count = 0; 
 				}
+			}else {
+				System.out.println("비었는데요?");
 			}
-			catch(Exception e) {
-				e.printStackTrace();
-			}
-			return answer;
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		return answer;
 	}
 	
 }
