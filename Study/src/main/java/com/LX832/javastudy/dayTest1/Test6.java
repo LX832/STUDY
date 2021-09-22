@@ -11,8 +11,8 @@ public class Test6 {
 		System.out.println("참가는 했지만 완주는 못한사람은?");
 
 
-		String[] participant = {"sangeun","sangwon","wonchul","sangeun"};
-    	String[] completion = {"wonchul","sangwon"};    	
+		String[] participant = {"sangeun","sangwon","wonchul","sangeun","joyoung"};
+    	String[] completion = {"wonchul","sangwon","joyoung"};    	
     	
 		System.out.println(getArrayMin(participant, completion));		
 		System.out.println("============================");
