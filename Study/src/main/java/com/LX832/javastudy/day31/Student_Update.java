@@ -33,9 +33,9 @@ public class Student_Update {
 	public static void main(String[] args) {
 		// 1.JDBC Loading
 		String driver = "oracle.jdbc.OracleDriver"; 
-		String url = "jdbc:oracle:thin:@192.168.0.28:1521:xe";
-		String id = "hyun";
-		String pw = "1234";
+		String url = "jdbc:oracle:thin:@localhost:1521:xe";
+		String id = "LX832";
+		String pw = "LX832";
 
 		Connection conn = null;// 
 		PreparedStatement pstmt = null;// 

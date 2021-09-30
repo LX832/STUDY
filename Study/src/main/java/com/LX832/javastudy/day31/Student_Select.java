@@ -23,11 +23,11 @@ public class Student_Select {
 		String driver = "oracle.jdbc.OracleDriver"; // String driver = "oracle.jdbc.driver.OracleDriver";
 		//String url = "jdbc:oracle:thin:@localhost:1521:xe";// Express Edition Version
 		// String url = "jdbc:oracle:thin:@127.0.0.1:1521:xe";// oracle 11g standard Version
-		 String url = "jdbc:oracle:thin:@192.168.0.28:1521:xe";//사설망 IP
+		 String url = "jdbc:oracle:thin:@localhost:1521:xe";//사설망 IP
 		// String url = "jdbc:oracle:thin:@210.112.234.67:1521:xe";//공인 IP
 
-		String id = "hyun";
-		String pw = "1234";//8자이상 15자 이내 규정(국제), 특수문자, 숫자, 문자 
+		String id = "LX832";
+		String pw = "LX832";//8자이상 15자 이내 규정(국제), 특수문자, 숫자, 문자 
 
 		Connection conn = null;// DB연결 클래스(id, pw)
 		PreparedStatement pstmt = null;// 보안상 이유로 권장, Query => select, insert, delete, update

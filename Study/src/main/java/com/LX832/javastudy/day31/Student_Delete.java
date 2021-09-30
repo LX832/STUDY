@@ -26,10 +26,10 @@ public class Student_Delete {
 	@SuppressWarnings("unused")
 	public static void main(String[] args) {		
 		String driver = "oracle.jdbc.OracleDriver"; 
-		String url = "jdbc:oracle:thin:@192.168.0.28:1521:xe";
+		String url = "jdbc:oracle:thin:@localhost:1521:xe";
 
-		String id = "hyun";
-		String pw = "1234";// 
+		String id = "LX832";
+		String pw = "LX832";// 
 
 		Connection conn = null;// 
 		PreparedStatement pstmt = null;// 
